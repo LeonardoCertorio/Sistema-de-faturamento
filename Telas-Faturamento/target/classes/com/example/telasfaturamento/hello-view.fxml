@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER"
+      maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0"
+      prefWidth="600.0"
+      spacing="15.0"
+      xmlns="http://javafx.com/javafx/11.0.14-internal"
+      fx:controller="com.example.telasfaturamento.CadastroController"
+      xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+      <TextField promptText="Nome" text="Nome">
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField promptText="Telefone" text="Telefone">
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField promptText="Data de " text="CPF">
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField promptText="Email" text="Email">
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </TextField>
+      <DatePicker promptText="Data de Nascimento" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+         <children>
+            <Button onAction="#onCadastrar" mnemonicParsing="false" text="Cadastrar" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button onAction="#onCancelar" mnemonicParsing="false" text="Cancelar" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="25.0" right="25.0" top="50.0" />
+         </VBox.margin></HBox>
+   </children>
+</VBox>
